@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف أحمد & حبيبة | Ahmed & Habiba Wedding</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="يسرنا دعوتكم لحضور حفل زفاف أحمد & حبيبة - الخميس 6 أغسطس 2026 الساعة 9:00 مساءً في قاعة الجاردن - فندق ريتاك">
+    <meta name="keywords" content="دعوة زفاف, أحمد وحبيبة, زفاف, فرح, دعوة إلكترونية">
+    <meta property="og:title" content="دعوة زفاف أحمد & حبيبة">
+    <meta property="og:description" content="نتشرف بدعوتكم لمشاركتنا أجمل يوم في حياتنا.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;700&family=Reem+Kufi:wght@500;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Gold Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Ambient Floating Gold Shimmer Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Opening Splash / Entrance Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-monogram">
+                <span class="arabic-letter">أ</span>
+                <div class="monogram-heart"><i class="fa-solid fa-heart"></i></div>
+                <span class="arabic-letter">ح</span>
+            </div>
+            
+            <div class="splash-rings-icon">
+                <svg class="mini-rings" viewBox="0 0 100 60" width="80" height="48">
+                    <circle cx="38" cy="30" r="20" class="ring ring-left" />
+                    <circle cx="62" cy="30" r="20" class="ring ring-right" />
+                    <polygon points="38,8 41,13 46,13 42,17 44,22 38,19 32,22 34,17 30,13 35,13" class="gem-left" />
+                    <polygon points="62,8 65,13 70,13 66,17 68,22 62,19 56,22 58,17 54,13 59,13" class="gem-right" />
+                </svg>
+            </div>
+
+            <h1 class="splash-names">أحمد <span class="gold-and">&</span> حبيبة</h1>
+            <p class="splash-subtitle">دعوة لحضور حفل الزفاف الملكي</p>
+            
+            <button id="enter-btn" class="enter-btn" aria-label="اضغط للدخول">
+                <div class="btn-ripple"></div>
+                <div class="btn-content">
+                    <i class="fa-solid fa-envelope-open-text gold-icon"></i>
+                    <span>اضغط للدخول</span>
+                </div>
+                <div class="seal-ring"></div>
+            </button>
+            
+            <p class="splash-hint"><i class="fa-solid fa-music"></i> تجربة موسيقية فاخرة في الانتظار</p>
+        </div>
+    </div>
+
+    <!-- Audio Element (Tamer Ashour - Bayt Kabeer) -->
+    <audio id="wedding-song" loop preload="auto">
+        <source src="09.Beit_Kebeer.mp3" type="audio/mpeg">
+        <source src="bayt-kabeer.mp3" type="audio/mpeg">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Audio Control Widget -->
+    <div class="audio-control-container">
+        <button id="audio-toggle" class="audio-toggle" aria-label="تشغيل أغنية بيت كبير - تامر عاشور">
+            <i class="fa-solid fa-music"></i>
+            <div class="sound-waves">
+                <span></span><span></span><span></span>
+            </div>
+            <span class="audio-tooltip">بيت كبير - تامر عاشور 🎵</span>
+        </button>
+    </div>
+
+    <!-- Main Web Application -->
+    <main id="main-content" class="main-content hidden">
+
+        <!-- Header / Navigation Bar -->
+        <header class="header">
+            <div class="header-inner">
+                <div class="nav-monogram">أحمد <i class="fa-solid fa-crown gold-crown"></i> حبيبة</div>
+                <nav class="nav-menu">
+                    <a href="#hero"><i class="fa-solid fa-home"></i> الرئيسية</a>
+                    <a href="#message"><i class="fa-solid fa-scroll"></i> الدعوة</a>
+                    <a href="#details"><i class="fa-solid fa-calendar-check"></i> الموعد والمكان</a>
+                    <a href="#wishes"><i class="fa-solid fa-comments"></i> التهاني</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-photo"></div>
+            <div class="corner-ornament top-right"></div>
+            <div class="corner-ornament top-left"></div>
+
+            <div class="hero-container">
+                <div class="bismillah-container">
+                    <span class="bismillah">بسم الله الرحمن الرحيم</span>
+                </div>
+
+                <!-- Animated SVG Luxury Rings Container -->
+                <div class="rings-hero-wrapper">
+                    <svg class="hero-rings-svg" viewBox="0 0 200 120">
+                        <defs>
+                            <linearGradient id="gold-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFE79A" />
+                                <stop offset="30%" stop-color="#FFAE00" />
+                                <stop offset="70%" stop-color="#D4AF37" />
+                                <stop offset="100%" stop-color="#8B6508" />
+                            </linearGradient>
+                            <linearGradient id="gold-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FFF5C0" />
+                                <stop offset="50%" stop-color="#E5C158" />
+                                <stop offset="100%" stop-color="#A87B19" />
+                            </linearGradient>
+                            <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        <!-- Ring 1 Left -->
+                        <g class="ring-group ring-g-left">
+                            <circle cx="75" cy="65" r="38" class="ring-stroke ring-shadow" />
+                            <circle cx="75" cy="65" r="38" class="ring-stroke" stroke="url(#gold-grad-1)" />
+                            <!-- Diamond top -->
+                            <polygon points="75,20 80,26 87,26 81,32 84,39 75,34 66,39 69,32 63,26 70,26" fill="url(#gold-grad-2)" filter="url(#gold-glow)" />
+                        </g>
+                        <!-- Ring 2 Right -->
+                        <g class="ring-group ring-g-right">
+                            <circle cx="125" cy="65" r="38" class="ring-stroke ring-shadow" />
+                            <circle cx="125" cy="65" r="38" class="ring-stroke" stroke="url(#gold-grad-2)" />
+                            <!-- Diamond top -->
+                            <polygon points="125,20 130,26 137,26 131,32 134,39 125,34 116,39 119,32 113,26 120,26" fill="url(#gold-grad-1)" filter="url(#gold-glow)" />
+                        </g>
+                        <circle cx="100" cy="65" r="6" fill="#D4AF37" class="ring-sparkle" />
+                    </svg>
+                </div>
+
+                <div class="invitation-tag">دعوة لحضور حفل زفاف</div>
+                
+                <h1 class="hero-title">
+                    <span class="groom-name">أحمد</span>
+                    <span class="heart-symbol"><i class="fa-solid fa-heart"></i></span>
+                    <span class="bride-name">حبيبة</span>
+                </h1>
+
+                <div class="verse-box">
+                    <p class="quran-verse">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+                </div>
+
+                <div class="hero-date-badge">
+                    <i class="fa-regular fa-calendar-alt"></i>
+                    <span>الخميس 6 أغسطس 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Timer Section -->
+        <section id="countdown" class="section-padding countdown-section">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2 class="section-title"><i class="fa-solid fa-hourglass-half gold-icon"></i> العد التنازلي لليوم الموعود</h2>
+                <div class="gold-line"></div>
+            </div>
+            
+            <p class="section-desc">متبقي على موعد حفل الزفاف</p>
+
+            <div class="countdown-grid" id="countdown-timer">
+                <div class="countdown-card">
+                    <div class="card-inner">
+                        <span id="days" class="time-num">00</span>
+                    </div>
+                    <span class="time-label">أيام</span>
+                </div>
+
+                <div class="countdown-card">
+                    <div class="card-inner">
+                        <span id="hours" class="time-num">00</span>
+                    </div>
+                    <span class="time-label">ساعات</span>
+                </div>
+
+                <div class="countdown-card">
+                    <div class="card-inner">
+                        <span id="minutes" class="time-num">00</span>
+                    </div>
+                    <span class="time-label">دقائق</span>
+                </div>
+
+                <div class="countdown-card">
+                    <div class="card-inner">
+                        <span id="seconds" class="time-num">00</span>
+                    </div>
+                    <span class="time-label">ثواني</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Invitation Message Section -->
+        <section id="message" class="section-padding message-section">
+            <div class="luxury-frame-wrapper">
+                <div class="frame-border">
+                    <div class="frame-content">
+                        <div class="gold-crown-header">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        
+                        <h2 class="invitation-heading">دعوة خاصة</h2>
+                        
+                        <div class="invitation-body-text">
+                            <p class="message-paragraph p1">
+                                بكل الحب والامتنان، نتشرف بدعوتكم لمشاركتنا أجمل يوم في حياتنا.
+                            </p>
+                            <div class="divider-ornament">
+                                <span>✦</span> <span>✦</span> <span>✦</span>
+                            </div>
+                            <p class="message-paragraph p2">
+                                حضوركم هو أعظم هدية لنا، ووجودكم بيننا يزيد فرحتنا ويجعل هذا اليوم ذكرى لا تُنسى.
+                            </p>
+                        </div>
+
+                        <div class="couple-signature">
+                            <span class="sig-title">داعين الله أن يديم الأنس والمحبة</span>
+                            <div class="sig-names">أحمد & حبيبة</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details Section -->
+        <section id="details" class="section-padding details-section">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2 class="section-title"><i class="fa-solid fa-gem gold-icon"></i> تفاصيل المناسبة</h2>
+                <div class="gold-line"></div>
+            </div>
+
+            <div class="details-cards-grid">
+                <!-- Date Card -->
+                <div class="detail-card">
+                    <div class="card-icon-box">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3>التاريخ</h3>
+                    <p class="detail-main">الخميس 6 أغسطس 2026</p>
+                    <p class="detail-sub">6 August 2026</p>
+                    <button class="action-btn calendar-btn" id="add-calendar-btn">
+                        <i class="fa-solid fa-calendar-plus"></i> إضافة للتقويم
+                    </button>
+                </div>
+
+                <!-- Time Card -->
+                <div class="detail-card highlight-card">
+                    <div class="card-icon-box">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>الموعد</h3>
+                    <p class="detail-main">الساعة 9:00 مساءً</p>
+                    <p class="detail-sub">مساءً بحضوركم الفاخر</p>
+                    <div class="badge-gold">توقيت الحفل</div>
+                </div>
+
+                <!-- Location Card -->
+                <div class="detail-card">
+                    <div class="card-icon-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>المكان</h3>
+                    <p class="detail-main">قاعة الجاردن</p>
+                    <p class="detail-sub">فندق ريتاك (سويس إن سابقًا)</p>
+                    <a href="https://maps.google.com/?q=فندق+ريتاك+سويس+إن" target="_blank" class="action-btn map-btn" rel="noopener noreferrer">
+                        <i class="fa-solid fa-map-location-dot"></i> فتح موقع القاعة (Google Maps)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest Wishes / Congratulation Board -->
+        <section id="wishes" class="section-padding wishes-section">
+            <div class="section-title-wrapper">
+                <div class="gold-line"></div>
+                <h2 class="section-title"><i class="fa-solid fa-heart gold-icon"></i> دفتر التهاني والأمنيات</h2>
+                <div class="gold-line"></div>
+            </div>
+            <p class="section-desc">اترك كلمة طيبة للعروسين تهنئة بهذه المناسبة السعيدة</p>
+
+            <div class="wishes-wrapper">
+                <!-- Wish Input Form -->
+                <form id="wish-form" class="wish-form">
+                    <div class="form-group">
+                        <input type="text" id="wish-author" required placeholder="اسمك الكريم...">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="wish-message" rows="3" required placeholder="اكتب تهنئتك للعروسين أحمد وحبيبة..."></textarea>
+                    </div>
+                    <button type="submit" class="action-btn wish-submit-btn">
+                        <i class="fa-solid fa-pen-nib"></i> إضافة تهنئة
+                    </button>
+                </form>
+
+                <!-- Dynamic Wishes Cards Carousel / List -->
+                <div class="wishes-grid" id="wishes-container">
+                    <!-- Sample wishes loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Invitation Section -->
+        <section class="section-padding share-section">
+            <div class="share-box">
+                <i class="fa-solid fa-share-nodes share-gold-icon"></i>
+                <h3>شارِك فرحتنا مع من تحب</h3>
+                <p>قم بمشاركة الدعوة مع الأهل والأصدقاء عبر شبكات التواصل الاجتماعي</p>
+                <div class="share-buttons">
+                    <button id="whatsapp-share" class="share-btn whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> واتساب
+                    </button>
+                    <button id="copy-link" class="share-btn copy">
+                        <i class="fa-solid fa-link"></i> نسخ رابط الدعوة
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-monogram">
+                <span>أحمد</span>
+                <i class="fa-solid fa-heart gold-heart"></i>
+                <span>حبيبة</span>
+            </div>
+            <p class="footer-blessing">"بارَكَ اللَّهُ لَكُما، وَبارَكَ عَلَيْكُما، وَجَمَعَ بَيْنَكُما فِي خَيْرٍ"</p>
+            <p class="copyright">جميع الحقوق محفوظة © 2026 | حفل زفاف أحمد وحبيبة</p>
+            
+            <button id="scroll-top" class="scroll-top-btn" aria-label="الرجوع للأعلى">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </footer>
+    </main>
+
+    <!-- Modal for Calendar Links -->
+    <div id="calendar-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-modal" id="close-calendar-modal">&times;</button>
+            <i class="fa-solid fa-calendar-check modal-gold-icon"></i>
+            <h3>حفظ موعد الزفاف في التقويم</h3>
+            <p>اختر نوع التقويم الخاص بك لإضافة تذكير بموعد الحفل (6 أغسطس 2026):</p>
+            <div class="calendar-options">
+                <a id="google-cal-link" target="_blank" rel="noopener" class="cal-option-btn google">
+                    <i class="fa-brands fa-google"></i> تقويم جوجل (Google Calendar)
+                </a>
+                <button id="ics-cal-download" class="cal-option-btn apple">
+                    <i class="fa-brands fa-apple"></i> تقويم آبل / أوتلوك (Apple / Outlook)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
